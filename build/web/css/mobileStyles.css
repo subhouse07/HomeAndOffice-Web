@@ -1,0 +1,120 @@
+body {
+    background-color: #ffe868;
+}
+
+#parentWin {
+	position: relative;
+}
+
+#computer {
+	
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+@keyframes headScroll {
+	from {
+		left: 100%;
+	}
+	to {
+		left: -70%;
+	}
+}
+
+.header { 
+	padding: 1%;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	position: fixed;
+	animation-name: headScroll;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#buttons {
+	margin: auto;
+}
+
+.btns {
+	float: left;
+	background-image: url(../img/mbSprites.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.cntrlBack {
+	width: 70px;
+	height: 52px;
+	background-position: 0 -52px;
+}
+
+.cntrlBack:active {
+	width: 70px;
+	height: 52px;
+	background-position: 0 0;
+}
+
+.cntrlPlay {
+	width: 73px;
+	height: 52px;
+	background-position: -70px -52px;
+}
+
+.cntrlPlay:active {
+	width: 73px;
+	height: 52px;
+	background-position: -70px 0;
+}
+
+.cntrlPause {
+	width: 75px;
+	height: 52px;
+	background-position: -143px -52px;
+}
+
+.cntrlPause:active {
+	width: 75px;
+	height: 52px;
+	background-position: -143px 0;
+}
+
+.cntrlSkip {
+	width: 75px;
+	height: 52px;
+	background-position: -218px -52px;
+}
+
+.cntrlSkip:active {
+	width: 75px;
+	height: 52px;
+	background-position: 0 -104px;
+}
+
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	float: right;
+	animation-name: colorchange;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	0%   {color: red;}
+	12%  {color: orange;}
+	25%  {color: yellow;}
+	37%  {color: green;}
+	50%  {color: blue;}
+	63%  {color: purple;}
+	100% {color: red;}
+}

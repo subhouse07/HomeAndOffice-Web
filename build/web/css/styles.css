@@ -1,0 +1,134 @@
+body {
+    background-color: #ffe868;
+}
+
+#parentWin {
+    border: solid black 2px;
+    display: table;
+    
+}
+
+#computer {
+    height: auto;
+    width: 80%;
+    display: table-row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes headScroll {
+	from {
+		left: 100%;
+	}
+	to {
+		left: -70%;
+	}
+}
+
+.header { 
+    
+	padding: 1%;
+}
+
+#mediaInfo {
+    display: table-row;
+    float: left;
+    height: max-content;
+    width: 580px;
+    background-color: gray;
+    margin-bottom: 5px;
+    padding: 1em;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	position: fixed;
+	animation-name: headScroll;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#buttons {
+    display: table-row;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btns {
+	float: left;
+	background-image: url(../img/sprites.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.cntrlBack {
+	width: 139px;
+	height: 103px;
+	background-position: 0 -103px;
+}
+
+.cntrlBack:active {
+	width: 139px;
+	height: 103px;
+	background-position: 0 0;
+}
+
+.cntrlPlay {
+	width: 146px;
+	height: 103px;
+	background-position: -139px -103px;
+}
+
+.cntrlPlay:active {
+	width: 146px;
+	height: 103px;
+	background-position: -139px 0;
+}
+
+.cntrlPause {
+	width: 146px;
+	height: 103px;
+	background-position: -285px -103px;
+}
+
+.cntrlPause:active {
+	width: 146px;
+	height: 103px;
+	background-position: -285px 0;
+}
+
+.cntrlSkip {
+	width: 149px;
+	height: 103px;
+	background-position: -431px -103px;
+}
+
+.cntrlSkip:active {
+	width: 149px;
+	height: 103px;
+	background-position: -431px 0;
+}
+
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	float: right;
+	animation-name: colorchange;
+	animation-timing-function: linear;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	0%   {color: red;}
+	12%  {color: orange;}
+	25%  {color: yellow;}
+	37%  {color: green;}
+	50%  {color: blue;}
+	63%  {color: purple;}
+	100% {color: red;}
+}
